@@ -3,16 +3,18 @@ from os import path
 from io import open
 here = path.abspath(path.dirname(__file__))
 
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
-    print(long_description)
+with open ("README.md" , "r", encoding='utf-8') as fh:
+    long_description = fh.read()
+
 setup(
     name='imagestoanimation',
-    version='0.1.2',
+    version='0.1.3',
     description="Converts a series of images to an animation using OpenCV",
 
     long_description=long_description,
     long_description_content_type="text/markdown",
+
+    url="https://github.com/jpsmithnl/imagesToAnimation",
 
     # For a list of valid classifiers, see https://pypi.org/classifiers/
     classifiers=[
