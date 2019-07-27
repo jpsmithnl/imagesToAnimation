@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "animation"
+name = "imagesToAnimation"
 version = "0.1.0"
-description = ""
+description = "Converts a series of images to an animation using OpenCV"
 authors = ["jpsmithnl <jp.smith@mun.ca>"]
 
 [tool.poetry.dependencies]
@@ -14,3 +14,6 @@ configargparse = "^0.14.0"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+imgvid = 'imagesToAnimation:run'

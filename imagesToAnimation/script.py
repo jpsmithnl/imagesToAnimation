@@ -7,7 +7,7 @@ import configargparse
 import cv2
 import numpy as np
 
-if __name__ == "__main__":
+def run():
 
     p = configargparse.ArgParser(default_config_files=['*.conf'])
     p.add("-s" , "--settings", is_config_file=True, help="Config file path, usually *.conf")
@@ -71,3 +71,6 @@ if __name__ == "__main__":
         except AttributeError:
             # if creation of out fails will throw error which may print strange
             pass
+
+if __name__ == "__main__":
+    run()
