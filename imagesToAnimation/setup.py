@@ -2,12 +2,17 @@ from setuptools import setup, find_packages
 from os import path
 from io import open
 here = path.abspath(path.dirname(__file__))
-with open(path.join(here, ''), encoding='utf-8') as f:
+
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
+
 setup(
     name='imagestoanimation',
     version='0.1.0',
     description="Converts a series of images to an animation using OpenCV",
+
+    long_description=long_description ,
+    long_description_content_type="text/markdown" ,
 
     # For a list of valid classifiers, see https://pypi.org/classifiers/
     classifiers=[
