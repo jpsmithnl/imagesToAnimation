@@ -3,12 +3,12 @@ from os import path
 from io import open
 here = path.abspath(path.dirname(__file__))
 
-with open ("README.md" , "r", encoding='utf-8') as fh:
+with open("../README.md", "r", encoding='utf-8') as fh:
     long_description = fh.read()
 
 setup(
     name='imagestoanimation',
-    version='0.1.3',
+    version='0.1.4',
     description="Converts a series of images to an animation using OpenCV",
 
     long_description=long_description,
