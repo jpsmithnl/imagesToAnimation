@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "imagesToAnimation"
-version = "0.1.0"
+version = "0.1.2"
 description = "Converts a series of images to an animation using OpenCV"
 authors = ["jpsmithnl <jp.smith@mun.ca>"]
 
