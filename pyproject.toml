@@ -1,8 +1,11 @@
 [tool.poetry]
-name = "imagesToAnimation"
-version = "0.1.4"
+name = "imagestoanimation"
+version = "0.1.9"
 description = "Converts a series of images to an animation using OpenCV"
 authors = ["jpsmithnl <jp.smith@mun.ca>"]
+homepage = "https://github.com/jpsmithnl/imagesToAnimation"
+readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.6"
@@ -16,4 +19,4 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
 [tool.poetry.scripts]
-imgvid = 'imagesToAnimation:run'
+imgvid = 'imagestoanimation:run'
